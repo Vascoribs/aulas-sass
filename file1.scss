@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;
+
+    li {
+        display: inline;
+        margin-right: 20px;
+            
+        a {
+            text-decoration: none;
+            color: #060;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }    
+    }
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    strong {
+        color: orange;
+    }
+}
+

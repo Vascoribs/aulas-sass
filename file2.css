@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: #FFF;
+  background-color: #f05922;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  padding: 3px;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.68rem;
+  color: #333;
+}
+table tr {
+  border: 1px solid #CCC;
+}
+table tr th {
+  background-color: #eaeaea;
+  color: #333;
+  padding: 3px;
+  font-weight: normal;
+}
+table tr td {
+  text-align: center;
+  padding: 3px;
+}
+table tr td a {
+  color: #F60;
+  text-decoration: none;
+}
+table tr td a:hover {
+  text-decoration: underline;
+}
+table tr :first-child {
+  text-align: left;
+}/*# sourceMappingURL=file2.css.map */
