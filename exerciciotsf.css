@@ -69,16 +69,27 @@ a:hover {
   margin: 0 auto;
 }
 
+header {
+  padding-top: 20px;
+}
 header .highlights {
   display: flex;
 }
+header .highlights h1 {
+  margin-right: 30px;
+}
 header .highlights ul {
   display: flex;
+  margin-bottom: 12px;
 }
 header .highlights ul li {
   width: 136px;
   text-align: center;
   font-size: 1.1rem;
+  margin-right: 15px;
+}
+header .highlights ul li a {
+  color: #333;
 }
 header nav ul {
   display: flex;
@@ -92,6 +103,7 @@ header nav ul li {
 }
 header nav ul li a {
   color: #004060;
+  font-weight: bold;
 }
 header nav ul li a:hover {
   text-decoration: none;
@@ -101,4 +113,61 @@ header nav ul li:hover {
 }
 header nav ul li:hover a {
   color: #FFF;
-}/*# sourceMappingURL=exerciciotsf.css.map */
+}
+header .nav-bottom {
+  background-color: #004060;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 4px 4px 4px;
+  padding: 5px 10px;
+}
+header .nav-bottom .submenu {
+  padding: 5px 0;
+}
+header .nav-bottom .submenu li {
+  display: inline-block;
+  padding-right: 11px;
+  border-right: 1px solid #54798b;
+  margin-right: 7px;
+}
+header .nav-bottom .submenu li:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+header .nav-bottom .submenu li a {
+  color: #FFF;
+  font-size: 1.2rem;
+}
+header .nav-bottom .search {
+  padding-top: 3px;
+}
+header .nav-bottom .search input {
+  font-size: 1.1rem;
+  border-radius: 3px;
+  border: none;
+  padding: 2px 6px;
+  color: #004060;
+  vertical-align: middle;
+}
+header .nav-bottom .search button {
+  background-color: #004060;
+  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 0;
+}
+header .nav-bottom .newsletter {
+  padding-right: 13px;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #54798b;
+  color: #FFF;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+header .nav-bottom .newsletter img {
+  margin-left: 4px;
+}
+
+/*# sourceMappingURL=exerciciotsf.css.map */
