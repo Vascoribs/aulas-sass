@@ -1,0 +1,16 @@
+@mixin square {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #CCC;
+    float: left;
+    font-weight: bold;
+}
+#square1 {
+    @include square;
+    color: #F00;
+}
+
+#square2 {
+    @include square;
+    color: #0F0;
+}

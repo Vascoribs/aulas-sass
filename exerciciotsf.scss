@@ -1,191 +1,66 @@
-$primary-color: #004060;
+@use 'reset';
+@use 'base';
+@use 'header';
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+main {
+    width: 665px;
 
-html {
-    font-size: 62.5%;
-}
+    .left {
+        width: 390px;
+        margin-right: 25px;
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-#wrapper {
-    width: 980px;
-    padding: 0 14px;
-    margin: 0 auto;
-}
-
-header {
-    padding-top: 20px;
-    
-    .highlights {
-        display: flex;
-
-        h1 {margin-right: 30px;}
-
-        ul {
-            display: flex;
-            margin-bottom: 12px;
-            
-            li {
-                width: 136px;
-                text-align: center;
-                font-size: 1.1rem;
-                margin-right: 15px;
-
-                a {
-                    color: #333;
-                }
-            }
+        h2 {
+            font-size: 1.9rem;
         }
     }
 
-    nav {
-        
-        ul {
-            display: flex;
+    .right {
+        width: 250px;
 
-            li {
-                font-size: 1.2rem;
-                background-color: #e6e6e6;
-                margin-right: 3px;
-                padding: 5px 10px;
-                border-radius: 4px 4px 0 0;
-                
-                a {
-                    color: $primary-color;
-                    font-weight: bold;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-
-                &:hover {
-                    background-color: $primary-color;
-
-                    a { 
-                        color: #FFF;
-                    }
-                }
-            }
+        h2 {
+            font-size: 1.6rem;
         }
     }
 
-    .nav-bottom {
-        background-color: $primary-color;
-        display: flex;
-        justify-content: space-between;
-        border-radius: 0 4px 4px 4px;
-        padding: 5px 10px;
-        
-        .submenu {
-            padding: 5px 0;
-            
-            li {
-                display: inline-block;
-                padding-right: 11px;
-                border-right: 1px solid #54798b;
-                margin-right: 7px;
-                
-                &:last-child {
-                    border-right: none;
-                    margin-right: 0;
-                    padding-right: 0;
-                }
+    article {
 
-                a {
-                    color: #FFF;
-                    font-size: 1.2rem;
-                }
+        border-bottom: 1px solid #69c;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
 
-            }
-        }
-        
-        .search {
-            padding-top: 3px;
 
-            input {
-                font-size: 1.1rem;
-                border-radius: 3px;
-                border: none;
-                padding: 2px 6px;
-                color: $primary-color;
-                vertical-align: middle;
-            }
-            button {
-                background-color: $primary-color;
-                border: none;
-                vertical-align: middle;
-                cursor: pointer;
-                font-size: 0;
+        h2 {
+            font-weight: bold;
+            margin-bottom: 4px;
+
+            a {
+                color: #395f73;
             }
         }
 
-        .newsletter {
-            padding-right: 13px;
-            display: flex;
-            align-items: center;
-            border-left: 1px solid #54798b;
-            color: #FFF;
+        .category, .date {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        .category {
+            margin-right: 30px;
+            font-size: 0.9rem;
+
+            a {
+                color: #800000;
+            }
+        }
+
+        .date {
+            font-size: 1.1rem;
+            color: #69c;
+        }
+
+        p {
+            color: #333;
             font-size: 1.2rem;
-            padding-left: 10px;
-
-            img {
-                margin-left: 4px;
-            }
         }
     }
 }
-
-
 

@@ -1,0 +1,124 @@
+@import 'variable';
+
+header {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    
+    .highlights {
+        display: flex;
+
+        h1 {margin-right: 30px;}
+
+        ul {
+            display: flex;
+            margin-bottom: 12px;
+            
+            li {
+                width: 136px;
+                text-align: center;
+                font-size: 1.1rem;
+                margin-right: 15px;
+
+                a {
+                    color: #333;
+                }
+            }
+        }
+    }
+
+    nav {
+        
+        ul {
+            display: flex;
+
+            li {
+                font-size: 1.2rem;
+                background-color: #e6e6e6;
+                margin-right: 3px;
+                padding: 5px 10px;
+                border-radius: 4px 4px 0 0;
+                
+                a {
+                    color: $primary-color;
+                    font-weight: bold;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                &:hover {
+                    background-color: $primary-color;
+
+                    a { 
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-bottom {
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0 4px 4px 4px;
+        padding: 5px 10px;
+        
+        .submenu {
+            padding: 5px 0;
+            
+            li {
+                display: inline-block;
+                padding-right: 11px;
+                border-right: 1px solid #54798b;
+                margin-right: 7px;
+                
+                &:last-child {
+                    border-right: none;
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+
+                a {
+                    color: #FFF;
+                    font-size: 1.2rem;
+                }
+
+            }
+        }
+        
+        .search {
+            padding-top: 3px;
+
+            input {
+                font-size: 1.1rem;
+                border-radius: 3px;
+                border: none;
+                padding: 2px 6px;
+                color: $primary-color;
+                vertical-align: middle;
+            }
+            button {
+                background-color: $primary-color;
+                border: none;
+                vertical-align: middle;
+                cursor: pointer;
+                font-size: 0;
+            }
+        }
+
+        .newsletter {
+            padding-right: 13px;
+            display: flex;
+            align-items: center;
+            border-left: 1px solid #54798b;
+            color: #FFF;
+            font-size: 1.2rem;
+            padding-left: 10px;
+
+            img {
+                margin-left: 4px;
+            }
+        }
+    }
+}

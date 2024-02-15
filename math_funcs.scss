@@ -1,0 +1,31 @@
+@use 'sass:math';
+
+@function convertPxRem($px) {
+    @return math.div($px, 16px) * 1rem;
+}
+
+p {
+    font-size: convertPxRem(20px);
+}
+
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    height: 500px;
+
+    div {
+        outline: 1px solid red;
+    }
+}
+
+
+#left {
+    width: math.div(600px, 980px) * 100%;
+    font-size: convertPxRem(18px);
+}
+
+#right {
+    width: math.div(380px, 980px) * 100%;
+    font-size: convertPxRem(12px);
+}

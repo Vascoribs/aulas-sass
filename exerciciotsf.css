@@ -69,8 +69,13 @@ a:hover {
   margin: 0 auto;
 }
 
+.d-flex {
+  display: flex;
+}
+
 header {
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 header .highlights {
   display: flex;
@@ -170,4 +175,50 @@ header .nav-bottom .newsletter img {
   margin-left: 4px;
 }
 
-/*# sourceMappingURL=exerciciotsf.css.map */
+main {
+  width: 665px;
+}
+main .left {
+  width: 390px;
+  margin-right: 25px;
+}
+main .left h2 {
+  font-size: 1.9rem;
+}
+main .right {
+  width: 250px;
+}
+main .right h2 {
+  font-size: 1.6rem;
+}
+main article {
+  border-bottom: 1px solid #69c;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+main article h2 {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+main article h2 a {
+  color: #395f73;
+}
+main article .category, main article .date {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+main article .category {
+  margin-right: 30px;
+  font-size: 0.9rem;
+}
+main article .category a {
+  color: #800000;
+}
+main article .date {
+  font-size: 1.1rem;
+  color: #69c;
+}
+main article p {
+  color: #333;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=exerciciotsf.css.map */

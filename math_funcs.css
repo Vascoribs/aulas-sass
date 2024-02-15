@@ -1,0 +1,23 @@
+p {
+  font-size: 1.25rem;
+}
+
+#wrapper {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  height: 500px;
+}
+#wrapper div {
+  outline: 1px solid red;
+}
+
+#left {
+  width: 61.2244897959%;
+  font-size: 1.125rem;
+}
+
+#right {
+  width: 38.7755102041%;
+  font-size: 0.75rem;
+}/*# sourceMappingURL=math_funcs.css.map */
